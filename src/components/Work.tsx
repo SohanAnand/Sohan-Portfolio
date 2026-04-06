@@ -5,32 +5,18 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
+    title: "BrandBrief AI — Canva Teams Case Study",
+    category: "0→1 AI Prototype",
+    tools: "Claude API · pgvector · RAG · Python · PostgreSQL — 0→1 AI prototype matching natural-language briefs to brand templates at 72% accuracy in <3s. Modeled 40% reduction in design-team requests and 22 min saved per asset via brand compliance scoring.",
     image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    link: "https://github.com/SohanAnand",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
-  },
-  {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
+    title: "Baseline Tech — Northeastern Accelerator",
+    category: "Accelerator Venture",
+    tools: "Product Strategy · Agile · Cross-functional Leadership — COO of accelerator venture: orchestrated cross-functional sprints across 3 teams, shipped MVP 7 weeks ahead of schedule with 85% feature completion. Secured $60K in pilot commitments with 5 partners.",
     image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    link: "https://github.com/SohanAnand",
   },
 ];
 

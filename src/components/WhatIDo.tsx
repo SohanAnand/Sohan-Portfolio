@@ -87,20 +87,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>AI PRODUCT STRATEGY</h3>
+              <h4>Enterprise AI & SaaS Products</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                I build products at the intersection of AI and enterprise SaaS —
+                from scoping AI agent workflows that cut onboarding time by 40%
+                to scaling developer platforms from 800 to 60,000+ partners.
+                I obsess over activation, retention, and time-to-value.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">AI Product Strategy</div>
+                <div className="what-tags">Agentic Frameworks &amp; RAG</div>
+                <div className="what-tags">A/B Testing &amp; Experimentation</div>
+                <div className="what-tags">GTM &amp; Product-Led Growth</div>
+                <div className="what-tags">Data-Driven Discovery</div>
+                <div className="what-tags">B2B SaaS &amp; Enterprise</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,21 +126,22 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>0→1 BUILDER</h3>
+              <h4>From Discovery to Shipped Product</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                I turn messy enterprise problems into products people actually
+                adopt — backed by A/B testing, cohort analysis, and relentless
+                discovery. From scoping to launch, I drive activation and
+                retention outcomes end to end.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">AI Product Strategy</div>
+                <div className="what-tags">Agentic Frameworks &amp; RAG</div>
+                <div className="what-tags">A/B Testing &amp; Experimentation</div>
+                <div className="what-tags">GTM &amp; Product-Led Growth</div>
+                <div className="what-tags">Data-Driven Discovery</div>
+                <div className="what-tags">B2B SaaS &amp; Enterprise</div>
               </div>
               <div className="what-arrow"></div>
             </div>
