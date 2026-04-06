@@ -5,16 +5,16 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "BrandBrief AI — Canva Teams Case Study",
+    title: "BrandBrief AI: Canva Teams Case Study",
     category: "0→1 AI Prototype",
-    tools: "Claude API · pgvector · RAG · Python · PostgreSQL — 0→1 AI prototype matching natural-language briefs to brand templates at 72% accuracy in <3s. Modeled 40% reduction in design-team requests and 22 min saved per asset via brand compliance scoring.",
+    tools: "Claude API · pgvector · RAG · Python · PostgreSQL. 0→1 AI prototype matching natural-language briefs to brand templates at 72% accuracy in <3s. Modeled 40% reduction in design-team requests and 22 min saved per asset via brand compliance scoring.",
     image: "/images/callhq.png",
     link: "https://github.com/SohanAnand",
   },
   {
-    title: "Baseline Tech — Northeastern Accelerator",
+    title: "Baseline Tech: Northeastern Accelerator",
     category: "Accelerator Venture",
-    tools: "Product Strategy · Agile · Cross-functional Leadership — COO of accelerator venture: orchestrated cross-functional sprints across 3 teams, shipped MVP 7 weeks ahead of schedule with 85% feature completion. Secured $60K in pilot commitments with 5 partners.",
+    tools: "Product Strategy · Agile · Cross-functional Leadership. COO of accelerator venture: orchestrated cross-functional sprints across 3 teams, shipped MVP 7 weeks ahead of schedule with 85% feature completion. Secured $60K in pilot commitments with 5 partners.",
     image: "/images/broki.png",
     link: "https://github.com/SohanAnand",
   },

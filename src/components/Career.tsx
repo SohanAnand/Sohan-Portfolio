@@ -31,7 +31,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Product Manager</h4>
-                <h5>Sony Interactive Entertainment — PlayStation · San Mateo, CA</h5>
+                <h5>Sony Interactive Entertainment / PlayStation · San Mateo, CA</h5>
               </div>
               <h3>Dec 2022 – Sep 2023</h3>
             </div>

@@ -90,7 +90,7 @@ const WhatIDo = () => {
               <h3>AI PRODUCT STRATEGY</h3>
               <h4>Enterprise AI & SaaS Products</h4>
               <p>
-                I build products at the intersection of AI and enterprise SaaS —
+                I build products at the intersection of AI and enterprise SaaS,
                 from scoping AI agent workflows that cut onboarding time by 40%
                 to scaling developer platforms from 800 to 60,000+ partners.
                 I obsess over activation, retention, and time-to-value.
@@ -130,7 +130,7 @@ const WhatIDo = () => {
               <h4>From Discovery to Shipped Product</h4>
               <p>
                 I turn messy enterprise problems into products people actually
-                adopt — backed by A/B testing, cohort analysis, and relentless
+                adopt, backed by A/B testing, cohort analysis, and relentless
                 discovery. From scoping to launch, I drive activation and
                 retention outcomes end to end.
               </p>

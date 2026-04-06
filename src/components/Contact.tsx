@@ -16,15 +16,15 @@ const Contact = () => {
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — sohhhan
+                linkedin.com/in/sohhhan/
               </a>
             </p>
             <h4>Education</h4>
             <p>
-              Northeastern University, Boston MA — M.S. Project Management, Dec 2025
+              Northeastern University, Boston MA, M.S. Project Management, Dec 2025
             </p>
             <p>
-              Gogte Institute of Technology, Belgaum — B.E. Computer Science, Mar 2020
+              Gogte Institute of Technology, Belgaum, B.E. Computer Science, Mar 2020
             </p>
           </div>
           <div className="contact-box">
