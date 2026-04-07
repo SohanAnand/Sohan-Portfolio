@@ -19,6 +19,14 @@ const Contact = () => {
                 linkedin.com/in/sohhhan/
               </a>
             </p>
+            <p style={{ marginTop: 0 }}>
+              <a
+                href="mailto:connect.sohananand@gmail.com"
+                data-cursor="disable"
+              >
+                connect.sohananand@gmail.com
+              </a>
+            </p>
             <h4>Education</h4>
             <p>
               Northeastern University, Boston MA, M.S. Project Management, Dec 2025

@@ -2,7 +2,7 @@
 
 ## Personal Summary
 **Name:** Sohan Anand Hanagandi
-**Email:** sohananandhanagandi@gmail.com
+**Email:** connect.sohananand@gmail.com
 **Phone:** +1 (857) 370-2511
 **LinkedIn:** https://www.linkedin.com/in/sohhhan/
 **Location:** Boston, MA

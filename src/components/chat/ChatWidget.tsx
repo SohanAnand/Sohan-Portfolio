@@ -20,7 +20,7 @@ const ChatWidget = () => {
       id: "welcome",
       role: "assistant",
       content:
-        "Hi, I'm Atlas, Sohan Hanagandi's AI assistant. Ask me anything about his work, skills, or projects.",
+        "Hi, I'm Kira, Sohan Hanagandi's AI assistant. Ask me anything about his work, skills, or projects.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -29,7 +29,7 @@ const ChatWidget = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const abortRef = useRef<boolean>(false);
 
-  const labels = ["Atlas AI", "Sohan's AI\nassistant"];
+  const labels = ["Kira AI", "Sohan's AI\nassistant"];
   const [labelIndex, setLabelIndex] = useState(0);
 
   useEffect(() => {
@@ -116,7 +116,7 @@ const ChatWidget = () => {
             ? {
                 ...m,
                 content:
-                  "Something went wrong. Please try again or email sohananandhanagandi@gmail.com",
+                  "Something went wrong. Please try again or email connect.sohananand@gmail.com",
                 isTyping: false,
               }
             : m
@@ -145,7 +145,7 @@ const ChatWidget = () => {
         onClick={() => (isOpen ? handleClose() : setIsOpen(true))}
         style={{
           position: "fixed",
-          bottom: "56px",
+          bottom: "72px",
           left: "32px",
           width: "56px",
           height: "56px",
@@ -205,7 +205,7 @@ const ChatWidget = () => {
       {/* Cycling label below orb */}
       <div style={{
         position: "fixed",
-        bottom: "14px",
+        bottom: "28px",
         left: "0px",
         width: "120px",
         display: "flex",
@@ -215,13 +215,13 @@ const ChatWidget = () => {
         <AnimatePresence mode="wait">
           <motion.span
             key={labelIndex}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
+            initial={{ opacity: 0, y: 10, scale: 0.88, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, y: -10, scale: 0.88, filter: "blur(4px)" }}
+            transition={{ duration: 0.55, ease: [0.4, 0, 0.2, 1] }}
             style={{
               color: "rgba(255,255,255,0.9)",
-              fontSize: "13px",
+              fontSize: labelIndex === 0 ? "17px" : "13px",
               lineHeight: "1.4",
               letterSpacing: "0.3px",
               whiteSpace: "pre-line",
@@ -245,7 +245,7 @@ const ChatWidget = () => {
             transition={{ duration: 0.25, ease: "easeOut" }}
             style={{
               position: "fixed",
-              bottom: "124px",
+              bottom: "140px",
               left: "32px",
               width: "360px",
               height: "500px",
@@ -287,7 +287,7 @@ const ChatWidget = () => {
                   fontSize: "14px",
                   letterSpacing: "0.5px",
                 }}>
-                  Atlas
+                  Kira
                 </div>
                 <div style={{
                   color: "rgba(34, 211, 238, 0.8)",
