@@ -5,16 +5,16 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "BrandBrief AI: Canva Teams Case Study",
+    title: "BrandBrief AI",
     category: "0→1 AI Prototype",
-    tools: "Claude API · pgvector · RAG · Python · PostgreSQL. 0→1 AI prototype matching natural-language briefs to brand templates at 72% accuracy in <3s. Modeled 40% reduction in design-team requests and 22 min saved per asset via brand compliance scoring.",
+    tools: "Claude API · pgvector · RAG · Python · PostgreSQL. Built a natural-language template discovery system for Canva Teams after identifying that 60% of users bypassed Brand Templates due to flat folder-based UX. Designed and shipped a RAG pipeline using Claude and pgvector that matches briefs to brand-compliant templates at 72% accuracy in under 3 seconds, projecting 40% fewer design-team requests and 22 minutes saved per asset.",
     image: "/images/callhq.png",
     link: "https://github.com/SohanAnand",
   },
   {
-    title: "Baseline Tech: Northeastern Accelerator",
+    title: "Baseline Tech MVP",
     category: "Accelerator Venture",
-    tools: "Product Strategy · Agile · Cross-functional Leadership. COO of accelerator venture: orchestrated cross-functional sprints across 3 teams, shipped MVP 7 weeks ahead of schedule with 85% feature completion. Secured $60K in pilot commitments with 5 partners.",
+    tools: "Product Strategy · Agile · Cross-functional Leadership. Served as COO through Northeastern's accelerator program, orchestrating cross-functional sprints across 3 teams. Compressed a 6-month delivery plan to 14 weeks by ruthlessly scoping to validation-critical features, shipped MVP 7 weeks ahead of schedule with 85% feature completion, and secured $60K in pilot commitments from 5 partners.",
     image: "/images/broki.png",
     link: "https://github.com/SohanAnand",
   },

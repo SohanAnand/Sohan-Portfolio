@@ -88,17 +88,18 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>AI PRODUCT STRATEGY</h3>
-              <h4>Enterprise AI & SaaS Products</h4>
+              <h4>AI-Native Products at Enterprise Scale</h4>
               <p>
-                I build products at the intersection of AI and enterprise SaaS,
-                from scoping AI agent workflows that cut onboarding time by 40%
-                to scaling developer platforms from 800 to 60,000+ partners.
-                I obsess over activation, retention, and time-to-value.
+                I build AI-native products and orchestrate complex systems
+                at scale. From scoping multi-agent AI workflows that cut
+                enterprise onboarding by 40% to scaling PlayStation's Developer
+                Portal from 800 to 60,000+ partners in 10 months. I obsess
+                over activation, retention, and time-to-value.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">AI Product Strategy</div>
-                <div className="what-tags">Agentic Frameworks &amp; RAG</div>
+                <div className="what-tags">Agentic Workflows &amp; RAG</div>
                 <div className="what-tags">A/B Testing &amp; Experimentation</div>
                 <div className="what-tags">GTM &amp; Product-Led Growth</div>
                 <div className="what-tags">Data-Driven Discovery</div>
@@ -126,18 +127,19 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>0→1 BUILDER</h3>
+              <h3>SYSTEMS ORCHESTRATOR</h3>
               <h4>From Discovery to Shipped Product</h4>
               <p>
-                I turn messy enterprise problems into products people actually
-                adopt, backed by A/B testing, cohort analysis, and relentless
-                discovery. From scoping to launch, I drive activation and
-                retention outcomes end to end.
+                I identify root causes, design solutions, and build them
+                using AI-assisted development. From scoping to launch,
+                I drive activation and retention outcomes end to end,
+                backed by A/B testing, cohort analysis, and relentless
+                discovery.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">AI Product Strategy</div>
-                <div className="what-tags">Agentic Frameworks &amp; RAG</div>
+                <div className="what-tags">Agentic Workflows &amp; RAG</div>
                 <div className="what-tags">A/B Testing &amp; Experimentation</div>
                 <div className="what-tags">GTM &amp; Product-Led Growth</div>
                 <div className="what-tags">Data-Driven Discovery</div>
