@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Bot, Send } from "lucide-react";
 
@@ -18,7 +20,7 @@ const ChatWidget = () => {
       id: "welcome",
       role: "assistant",
       content:
-        "Hi, I'm Atlas — Sohan Hanagandi's AI assistant. Ask me anything about his work, skills, or projects.",
+        "Hi, I'm Atlas, Sohan Hanagandi's AI assistant. Ask me anything about his work, skills, or projects.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -26,6 +28,16 @@ const ChatWidget = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const abortRef = useRef<boolean>(false);
+
+  const labels = ["Atlas AI", "Sohan's AI\nassistant"];
+  const [labelIndex, setLabelIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLabelIndex((i) => (i + 1) % labels.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     if (messagesEndRef.current) {
@@ -95,7 +107,8 @@ const ChatWidget = () => {
       if (!res.ok) throw new Error(`API error: ${res.status}`);
 
       const data = await res.json() as { answer: string };
-      await revealWordByWord(assistantMsgId, data.answer);
+      const cleaned = data.answer.replace(/\u2014/g, ",").replace(/\u2013/g, "-");
+      await revealWordByWord(assistantMsgId, cleaned);
     } catch {
       setMessages((prev) =>
         prev.map((m) =>
@@ -132,7 +145,7 @@ const ChatWidget = () => {
         onClick={() => (isOpen ? handleClose() : setIsOpen(true))}
         style={{
           position: "fixed",
-          bottom: "32px",
+          bottom: "56px",
           left: "32px",
           width: "56px",
           height: "56px",
@@ -144,20 +157,25 @@ const ChatWidget = () => {
           alignItems: "center",
           justifyContent: "center",
           zIndex: 99999,
-          boxShadow: "0 0 20px rgba(34, 211, 238, 0.4)",
+          boxShadow: "0 0 25px rgba(34, 211, 238, 0.6), 0 0 50px rgba(34, 211, 238, 0.2)",
         }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         animate={{
           boxShadow: isOpen
-            ? "0 0 30px rgba(34, 211, 238, 0.6)"
+            ? "0 0 35px rgba(34, 211, 238, 0.7)"
             : [
-                "0 0 20px rgba(34, 211, 238, 0.4)",
-                "0 0 35px rgba(34, 211, 238, 0.7)",
-                "0 0 20px rgba(34, 211, 238, 0.4)",
+                "0 0 12px rgba(34, 211, 238, 0.3)",
+                "0 0 50px rgba(34, 211, 238, 0.9)",
               ],
+          scale: isOpen ? 1 : [1, 1.05],
         }}
-        transition={{ duration: 2, repeat: isOpen ? 0 : Infinity }}
+        transition={{
+          duration: 2,
+          repeat: isOpen ? 0 : Infinity,
+          repeatType: "mirror",
+          ease: "easeInOut",
+        }}
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
@@ -184,6 +202,40 @@ const ChatWidget = () => {
         </AnimatePresence>
       </motion.button>
 
+      {/* Cycling label below orb */}
+      <div style={{
+        position: "fixed",
+        bottom: "14px",
+        left: "0px",
+        width: "120px",
+        display: "flex",
+        justifyContent: "center",
+        zIndex: 99999,
+      }}>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={labelIndex}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            style={{
+              color: "rgba(255,255,255,0.9)",
+              fontSize: "13px",
+              lineHeight: "1.4",
+              letterSpacing: "0.3px",
+              whiteSpace: "pre-line",
+              textAlign: "center",
+              pointerEvents: "none",
+              userSelect: "none",
+              textShadow: "0 0 8px rgba(34, 211, 238, 0.9), 0 0 20px rgba(34, 211, 238, 0.5)",
+            }}
+          >
+            {labels[labelIndex]}
+          </motion.span>
+        </AnimatePresence>
+      </div>
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -193,7 +245,7 @@ const ChatWidget = () => {
             transition={{ duration: 0.25, ease: "easeOut" }}
             style={{
               position: "fixed",
-              bottom: "100px",
+              bottom: "124px",
               left: "32px",
               width: "360px",
               height: "500px",
@@ -242,7 +294,7 @@ const ChatWidget = () => {
                   fontSize: "11px",
                   letterSpacing: "0.5px",
                 }}>
-                  Sohan's AI Assistant · Powered by RAG + Claude
+                  Sohan's assistant · Powered by AI
                 </div>
               </div>
             </div>
@@ -324,6 +376,36 @@ const ChatWidget = () => {
                           />
                         ))}
                       </div>
+                    ) : msg.role === "assistant" ? (
+                      <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                          p: ({ children }) => (
+                            <p style={{ margin: "0 0 8px 0", lineHeight: "1.5" }}>{children}</p>
+                          ),
+                          ul: ({ children }) => (
+                            <ul style={{ margin: "4px 0", paddingLeft: "16px" }}>{children}</ul>
+                          ),
+                          li: ({ children }) => (
+                            <li style={{ margin: "2px 0" }}>{children}</li>
+                          ),
+                          strong: ({ children }) => (
+                            <strong style={{ color: "#22d3ee", fontWeight: 600 }}>{children}</strong>
+                          ),
+                          a: ({ href, children }) => (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ color: "#22d3ee", textDecoration: "underline" }}
+                            >
+                              {children}
+                            </a>
+                          ),
+                        }}
+                      >
+                        {msg.content}
+                      </ReactMarkdown>
                     ) : (
                       msg.content
                     )}
