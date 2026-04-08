@@ -34,7 +34,7 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 620px;
   margin-left: 200px;
   position: relative;
   display: none;
@@ -54,6 +54,11 @@
 .what-content-active {
   min-height: 67%;
   padding: 40px 50px;
+}
+
+.what-noTouch:hover .what-content-in,
+.what-content-active .what-content-in {
+  overflow: visible;
 }
 
 .what-noTouch:hover ~ .what-content,
@@ -249,7 +254,7 @@
     margin-right: 20%;
   }
   .what-box-in {
-    height: 400px;
+    height: 520px;
   }
   .what-content h3 {
     font-size: 28px;
@@ -326,7 +331,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: auto;
   }
   .what-box {
     width: 500px;
@@ -335,10 +340,16 @@
   }
   .what-content {
     width: 100%;
+    height: auto;
+    min-height: unset;
+  }
+  .what-content-in {
+    height: auto;
+    overflow: visible;
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: auto;
   }
   .what-content h5,
   .what-content-flex {
