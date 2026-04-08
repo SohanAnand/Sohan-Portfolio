@@ -31,6 +31,13 @@ const ChatWidget = () => {
 
   const labels = ["Kira AI", "Sohan's AI\nassistant"];
   const [labelIndex, setLabelIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768);
+
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -144,6 +151,8 @@ const ChatWidget = () => {
     abortRef.current = true;
     setIsOpen(false);
   };
+
+  if (isMobile) return null;
 
   return (
     <>
