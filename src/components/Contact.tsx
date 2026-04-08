@@ -29,7 +29,7 @@ const Contact = () => {
             </p>
             <h4>Education</h4>
             <p>
-              Northeastern University, Boston MA, M.S. Project Management, Dec 2025
+              ortheastern University, oston MA, M.S. Project Management, Dec 2025
             </p>
             <p>
               Gogte Institute of Technology, Belgaum, B.E. Computer Science, Mar 2020
