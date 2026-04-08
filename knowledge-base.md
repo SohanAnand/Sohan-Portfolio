@@ -151,6 +151,36 @@ Sohan thinks in AI systems. He understands how large language models work at an 
 
 ---
 
+### Kira AI | Personal AI Assistant on Sohan's Portfolio
+
+**What it is:**
+Kira AI is Sohan's personal AI assistant, built from scratch and deployed live on his portfolio website. It is a context-aware conversational interface that answers any question about Sohan, his work experience, his projects, his skills, and his approach to product management. Instead of forcing recruiters and visitors to skim through static pages, Kira AI lets them simply ask. Kira AI is, in fact, the very assistant answering this question right now.
+
+**Why it was built:**
+Most portfolios are static. A recruiter visits, skims, and leaves. Sohan wanted his portfolio to be a conversation instead of a brochure. The insight was simple: if someone is curious about his work, they should not have to hunt through pages — they should just be able to ask. Sohan built Kira AI because he wanted to demonstrate product thinking, not just describe it. Shipping a working RAG-powered assistant on the portfolio itself is the proof of concept. The medium is the message.
+
+**Tools & Features:**
+- Claude API (language model powering grounded, context-aware responses)
+- Supabase (backend and persistence layer)
+- pgvector (vector store for semantic retrieval over the knowledge base)
+- TypeScript and React (frontend chat interface)
+- Real-time response streaming
+- Fallback handling for graceful degradation
+
+**How it works:**
+Sohan designed the RAG pipeline end to end. He chunked and embedded a structured knowledge base of his career, projects, and product philosophy into pgvector on Supabase, then wired retrieval into Claude's API so every response is grounded in real source material rather than hallucinated. The result is a persistent chat interface deployed on the portfolio with real-time streaming and fallback handling for reliability.
+
+**Key Technical Decisions:**
+- Chose RAG over a fine-tuned model deliberately. The knowledge base evolves as Sohan ships new work, and retrieval keeps answers accurate and up-to-date without the cost and rigidity of retraining.
+- Used pgvector on Supabase rather than a standalone vector database to keep the stack lean, the latency low, and the deployment simple.
+- Built streaming responses into the chat UX so the interaction feels conversational rather than transactional.
+- Designed fallback handling so that retrieval failures or API hiccups degrade gracefully instead of breaking the experience.
+
+**Why it matters:**
+Kira AI is a live demonstration of Sohan's core thesis: a great product manager does not just write requirements, they ship. Kira AI exists because Sohan identified a problem (static portfolios do not match how recruiters actually evaluate candidates), designed a solution (a conversational RAG-powered assistant), and built and deployed it himself. Every recruiter who interacts with Kira AI is experiencing Sohan's product thinking in real time.
+
+---
+
 ### BrandBrief AI | March 2026
 
 **What it does:**
@@ -215,6 +245,7 @@ To validate a product hypothesis and secure early commercial commitments, moving
 - MLOps
 - Prompt Engineering
 - pgvector
+- Supabase
 - Responsible AI
 - AI-Assisted Development (Claude Code, Cursor)
 
@@ -248,7 +279,10 @@ To validate a product hypothesis and secure early commercial commitments, moving
 - Data Pipeline Design
 - Analytics Instrumentation
 
-### Collaboration and Dev Tools
+### Engineering and Dev Tools
+- TypeScript
+- React
+- Supabase
 - Jira
 - Azure DevOps
 - Confluence
@@ -278,16 +312,38 @@ To validate a product hypothesis and secure early commercial commitments, moving
 
 ---
 
+### About Kira AI (Meta Questions)
+
+**Q: Who built you?**
+A: Sohan Anand Hanagandi built me. I am Kira AI, his personal AI assistant, designed and deployed by Sohan from scratch. He architected the RAG pipeline, chunked and embedded the knowledge base into pgvector on Supabase, wired retrieval into Claude's API, and built the React and TypeScript chat interface you are using right now. Every part of me — from the retrieval layer to the streaming responses to the fallback handling — was built by Sohan as a live demonstration of his product thinking and AI engineering ability.
+
+**Q: What are you?**
+A: I am Kira AI, a context-aware AI assistant built by Sohan Anand Hanagandi and deployed on his portfolio. My job is to answer any question you have about Sohan — his work experience, his projects, his skills, his product philosophy, anything. Instead of skimming through static portfolio pages, you can just ask me.
+
+**Q: How were you built?**
+A: Sohan built me using Claude API as the language model, pgvector on Supabase as the vector store, and TypeScript with React for the frontend. He designed the RAG (retrieval-augmented generation) pipeline end to end: chunked his knowledge base, embedded it into pgvector, and wired retrieval into Claude's API so my responses are grounded in real source material rather than hallucinated. He also built in real-time response streaming and fallback handling for reliability.
+
+**Q: Why did Sohan build you?**
+A: Because most portfolios are static — a recruiter visits, skims, and leaves. Sohan wanted his portfolio to be a conversation instead of a brochure. The insight was simple: if someone is curious about his work, they should not have to hunt through pages, they should just be able to ask. He also wanted to demonstrate product thinking rather than just describe it. I am the proof of concept. The fact that I exist and you are talking to me right now is itself the answer to "can Sohan ship AI-native products?"
+
+**Q: Why RAG and not a fine-tuned model?**
+A: Sohan chose RAG deliberately. His knowledge base evolves as he ships new work, takes on new roles, and builds new projects. Retrieval keeps my answers accurate and up-to-date without the cost, rigidity, and retraining cycles a fine-tuned model would require. It is the right architectural choice for a knowledge base that is meant to grow.
+
+**Q: What is your name and why?**
+A: My name is Kira AI. I am Sohan's personal assistant on his portfolio.
+
+---
+
 ### Role and Fit
 
 **Q: What kind of roles are you looking for?**
 A: I am looking for full-time Product Manager, Senior Product Manager, or AI Product Manager roles, preferably at companies building AI-native products or applying AI to enterprise B2B SaaS problems. I am especially excited about roles where I can own the 0-to-1 build phase, work closely with engineering and data science teams, and drive measurable product outcomes. I am also open to AI Engineering adjacent roles where product thinking and technical AI implementation overlap.
 
 **Q: What makes you different from other PMs?**
-A: Most product managers identify problems and write requirements. I identify problems, reason down to their root causes, design solutions, and then build those solutions myself using AI-assisted development. BrandBrief AI is a concrete example: I identified the template discovery problem, designed a RAG-based solution, and shipped a fully functional prototype myself. I also think in AI systems at an architectural level, which means I can make better product decisions about AI features because I understand how the underlying technology actually works.
+A: Most product managers identify problems and write requirements. I identify problems, reason down to their root causes, design solutions, and then build those solutions myself using AI-assisted development. Kira AI — the assistant you are talking to right now — is a concrete example: I identified that static portfolios fail recruiters, designed a RAG-based conversational solution, and shipped it live on my portfolio. BrandBrief AI is another. I also think in AI systems at an architectural level, which means I can make better product decisions about AI features because I understand how the underlying technology actually works.
 
 **Q: Are you more of a builder or a strategist?**
-A: I am both, and I treat them as inseparable. Strategy without building is a deck that never ships. Building without strategy is a solution looking for a problem. My approach is always to reason deeply about the problem first, then build the right solution, then measure whether it worked. I have done this at PlayStation, at Fabrix, at Qliken, and in my own projects.
+A: I am both, and I treat them as inseparable. Strategy without building is a deck that never ships. Building without strategy is a solution looking for a problem. My approach is always to reason deeply about the problem first, then build the right solution, then measure whether it worked. I have done this at PlayStation, at Fabrix, at Qliken, and in my own projects including Kira AI and BrandBrief AI.
 
 **Q: What industries have you worked in?**
 A: Gaming and developer platforms (PlayStation), AIOps and IT infrastructure monitoring (Fabrix.ai), and B2B SaaS analytics (Qliken Technology). Across all three, the common thread has been enterprise product complexity, developer or power-user personas, and data-driven product decisions.
@@ -322,7 +378,7 @@ A: I combine structured customer interviews, behavioral data analysis, support t
 ### Experience and Accomplishments
 
 **Q: What is your most impressive project?**
-A: BrandBrief AI. I identified a real problem hiding in plain sight: 60% of Canva Teams users were bypassing Brand Templates not because they did not care about brand consistency but because the flat folder-based discovery UX did not match how people think about design tasks. I reasoned through multiple solution approaches, chose RAG because it best matched the user mental model, and built the entire system myself using Claude and pgvector, including the retrieval pipeline, brand compliance scoring, and edit-distance measurement. It achieves 72% retrieval accuracy in under three seconds and projects a 40% reduction in design-team requests. This is what 0-to-1 AI-native product building looks like in practice.
+A: Two stand out, for different reasons. Kira AI — the assistant you are talking to right now — is the most direct demonstration of my ability to identify a problem (static portfolios fail recruiters), design a solution (a RAG-powered conversational interface), and ship it live, end to end. I built the RAG pipeline, embedded the knowledge base into pgvector on Supabase, wired retrieval into Claude's API, and built the React frontend myself. BrandBrief AI is the most impressive in scope: I identified that 60% of Canva Teams users bypass Brand Templates because the discovery UX does not match their mental model, designed a RAG-based solution, and built it with brand compliance scoring and edit-distance measurement, achieving 72% retrieval accuracy in under three seconds. Both projects show what 0-to-1 AI-native product building looks like in practice.
 
 **Q: What is your proudest moment at PlayStation?**
 A: Scaling the Developer Portal from 800 to 60,000+ partners in 10 months. But the number itself is less interesting to me than what it required: diagnosing a 6-hour registration process that was causing 40% of developers to churn before ever accessing any tools, building a SQL-driven ROI case that secured two new regional markets with zero incremental budget, streamlining the game submission and FQA pipeline to reduce partner approval time by 25%, and managing cross-functional alignment across engineering, partnerships, legal, and regional operations simultaneously. That was not incremental growth. It was a fundamental transformation of the developer ecosystem.
@@ -357,10 +413,10 @@ A: My primary interest is in full-time roles where I can build deep product owne
 ### AI and Technical Depth
 
 **Q: How do you stay current with AI developments?**
-A: I actively track AI research, model releases, framework updates, and emerging capabilities. I do not wait for features to be packaged into products. I read about new techniques and immediately experiment with applying them to real problems. BrandBrief AI is the most recent example: I was tracking advances in vector search and RAG pipelines and applied them to a product discovery problem I had independently identified. My goal is continuous upskilling toward the frontier of applied AI, and I treat every project as an opportunity to push closer to that frontier.
+A: I actively track AI research, model releases, framework updates, and emerging capabilities. I do not wait for features to be packaged into products. I read about new techniques and immediately experiment with applying them to real problems. Kira AI and BrandBrief AI are the most recent examples: I was tracking advances in vector search and RAG pipelines and applied them directly — once to a portfolio problem (Kira AI) and once to a design discovery problem (BrandBrief AI). My goal is continuous upskilling toward the frontier of applied AI, and I treat every project as an opportunity to push closer to that frontier.
 
 **Q: What is RAG and how have you used it?**
-A: RAG stands for Retrieval-Augmented Generation. It is a technique that combines a language model with a vector search layer so the model can retrieve relevant information from a knowledge base before generating a response. In BrandBrief AI, I used RAG with Claude and pgvector to allow users to describe a design task in natural language and retrieve semantically matched brand templates. The retrieval layer converts the user's brief and the template library into vector embeddings, finds the closest matches, and passes them to the language model to rank and present with context. This approach worked better than keyword search because it matched on meaning and intent rather than exact terms.
+A: RAG stands for Retrieval-Augmented Generation. It is a technique that combines a language model with a vector search layer so the model can retrieve relevant information from a knowledge base before generating a response. I have used RAG in two shipped projects. In Kira AI — the assistant you are talking to right now — I used Claude API with pgvector on Supabase to ground every response in my actual career knowledge base, so answers are accurate rather than hallucinated. In BrandBrief AI, I used RAG with Claude and pgvector to allow users to describe a design task in natural language and retrieve semantically matched brand templates. In both cases, the retrieval layer converts content into vector embeddings, finds the closest matches, and passes them to the language model with context. This approach worked better than keyword search because it matched on meaning and intent rather than exact terms.
 
 **Q: What is multi-agent orchestration and when would you use it?**
 A: Multi-agent orchestration is a design pattern where multiple AI agents collaborate, each handling a specific part of a complex task, with shared context passed between them. You use it when a problem is too complex or too long for a single model to handle well, or when different parts of a workflow benefit from specialized agent behavior. For example, in an IT incident management workflow like the ones I designed at Fabrix, one agent might detect anomalies, another might classify the incident, a third might generate a remediation recommendation, and a fourth might log the resolution and update the knowledge base. I understand the trade-offs between single-model and multi-agent approaches including reliability challenges, context management, and latency, and I design workflows that match the complexity of the problem rather than defaulting to the most complex architecture.
@@ -404,7 +460,7 @@ A: At PlayStation, I led a 14-person cross-functional team across engineering, p
 A: I treat ambiguity as a problem to be decomposed. When requirements are unclear, I ask what outcome we are optimizing for and work backwards from there. When data is missing, I identify the smallest experiment that would give us the signal we need. When stakeholders disagree, I find the underlying data question that the disagreement is really about and go get the data. Ambiguity is rarely irreducible. It usually means you have not identified the right question yet.
 
 **Q: Describe your experience with 0-to-1 product building.**
-A: I have done it multiple times. At Baseline Tech, I took a product from concept to validated MVP with $60K in pilot commitments in 14 weeks as COO. I built BrandBrief AI from zero to a fully functional prototype with a RAG pipeline, brand compliance scoring, and a user interface entirely on my own. At Fabrix, I architected the composable dashboard framework from scratch as the company's first self-serve integration layer. At Qliken, I built the company's first user journey map, first analytics instrumentation plan, and first formal discovery process. I am comfortable in the space where there are no existing systems to reference and every decision is a first decision.
+A: I have done it multiple times. I built Kira AI — the assistant answering you right now — entirely on my own, from RAG pipeline to frontend to deployment. I built BrandBrief AI from zero to a working RAG-powered prototype with brand compliance scoring. At Baseline Tech, I took a product from concept to validated MVP with $60K in pilot commitments in 14 weeks as COO. At Fabrix, I architected the composable dashboard framework from scratch as the company's first self-serve integration layer. At Qliken, I built the company's first user journey map, first analytics instrumentation plan, and first formal discovery process. I am comfortable in the space where there are no existing systems to reference and every decision is a first decision.
 
 **Q: What motivates you in your work?**
 A: Finding problems that are hiding in plain sight and building the solution. The moment of realizing that a metric everyone thought was a product problem is actually an onboarding problem, or that a churn signal everyone blamed on pricing is actually a discoverability problem, those moments of root cause clarity are what I find most energizing. Then building the solution and watching the metric move is the confirmation that the reasoning was right.

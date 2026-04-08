@@ -6,15 +6,14 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I'm a Product Manager and AI-native builder with 5+ years
-          shipping B2B SaaS enterprise products, from PlayStation's
-          60,000-partner Developer Portal to AI agent workflows for
-          Fortune 500 accounts. I don't stop at strategy decks. I
-          identify root causes, design solutions, and build them myself
-          using AI-assisted development. Fluent in agentic frameworks,
-          RAG pipelines, and prompt engineering, I turn messy enterprise
-          problems into products people actually adopt, backed by A/B
-          testing, cohort analysis, and relentless discovery.
+          I'm a Product Manager and AI-native product builder with 4+
+          years shipping B2B SaaS enterprise products. I don't stop at
+          strategy decks. I identify root causes, design solutions, and
+          build them myself. I design RAG pipelines, orchestrate
+          multi-agent systems, and ship AI-powered products, including
+          the AI assistant on this site. I think with AI, reason with
+          AI, build with AI, and understand how the systems work from
+          architecture to output.
         </p>
       </div>
     </div>

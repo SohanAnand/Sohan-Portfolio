@@ -92,18 +92,18 @@ const WhatIDo = () => {
               <p>
                 I build AI-native products and orchestrate complex systems
                 at scale. From scoping multi-agent AI workflows that cut
-                enterprise onboarding by 40% to scaling PlayStation's Developer
-                Portal from 800 to 60,000+ partners in 10 months. I obsess
-                over activation, retention, and time-to-value.
+                enterprise onboarding by 40% to shipping RAG pipelines and
+                the AI assistant powering this portfolio. I obsess over
+                activation, retention, and time-to-value.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">AI Product Strategy</div>
-                <div className="what-tags">Agentic Workflows &amp; RAG</div>
-                <div className="what-tags">A/B Testing &amp; Experimentation</div>
-                <div className="what-tags">GTM &amp; Product-Led Growth</div>
-                <div className="what-tags">Data-Driven Discovery</div>
-                <div className="what-tags">B2B SaaS &amp; Enterprise</div>
+                <div className="what-tags">Agentic Workflows</div>
+                <div className="what-tags">RAG Pipelines</div>
+                <div className="what-tags">A/B Testing</div>
+                <div className="what-tags">Product-Led Growth</div>
+                <div className="what-tags">B2B SaaS</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -138,12 +138,12 @@ const WhatIDo = () => {
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">AI Product Strategy</div>
-                <div className="what-tags">Agentic Workflows &amp; RAG</div>
-                <div className="what-tags">A/B Testing &amp; Experimentation</div>
-                <div className="what-tags">GTM &amp; Product-Led Growth</div>
+                <div className="what-tags">AI-Assisted Dev</div>
+                <div className="what-tags">Multi-Agent Systems</div>
+                <div className="what-tags">Cohort Analysis</div>
+                <div className="what-tags">Root Cause Analysis</div>
+                <div className="what-tags">Activation &amp; Retention</div>
                 <div className="what-tags">Data-Driven Discovery</div>
-                <div className="what-tags">B2B SaaS &amp; Enterprise</div>
               </div>
               <div className="what-arrow"></div>
             </div>

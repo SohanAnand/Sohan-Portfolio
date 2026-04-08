@@ -1,28 +1,43 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
-const projects = [
+const projects: {
+  title: string;
+  category: string;
+  tools: string;
+  thinking: string;
+  image?: string;
+  link?: string;
+}[] = [
+  {
+    title: "Kira AI",
+    category: "AI-Powered Assistant",
+    tools: "Claude API · Supabase · pgvector · TypeScript · React. Built a context-aware AI assistant from scratch. Designed the RAG pipeline, chunked and embedded a knowledge base using pgvector, and wired retrieval to Claude's API for grounded, accurate responses. Deployed as a persistent chat interface on this portfolio with real-time streaming and fallback handling.",
+    thinking: "Most portfolios are static. A recruiter visits, skims, and leaves. I wanted mine to be a conversation. The insight was simple: if someone is curious about my work, they shouldn't have to hunt through pages. They should just be able to ask. I built Kira AI because I wanted to demonstrate product thinking, not just describe it. Choosing RAG over a fine-tuned model was deliberate. The knowledge base evolves, and retrieval keeps answers grounded and accurate without retraining. Shipping it on this portfolio is itself the proof of concept.",
+  },
   {
     title: "BrandBrief AI",
     category: "0→1 AI Prototype",
     tools: "Claude API · pgvector · RAG · Python · PostgreSQL. Built a natural-language template discovery system for Canva Teams after identifying that 60% of users bypassed Brand Templates due to flat folder-based UX. Designed and shipped a RAG pipeline using Claude and pgvector that matches briefs to brand-compliant templates at 72% accuracy in under 3 seconds, projecting 40% fewer design-team requests and 22 minutes saved per asset.",
-    image: "/images/callhq.png",
-    link: "https://github.com/SohanAnand",
-  },
-  {
-    title: "Baseline Tech MVP",
-    category: "Accelerator Venture",
-    tools: "Product Strategy · Agile · Cross-functional Leadership. Served as COO through Northeastern's accelerator program, orchestrating cross-functional sprints across 3 teams. Compressed a 6-month delivery plan to 14 weeks by ruthlessly scoping to validation-critical features, shipped MVP 7 weeks ahead of schedule with 85% feature completion, and secured $60K in pilot commitments from 5 partners.",
-    image: "/images/broki.png",
-    link: "https://github.com/SohanAnand",
+    thinking: "The problem wasn't that users disliked Brand Templates. They couldn't find the right one fast enough, so they skipped them entirely. That 60% bypass rate was a discovery failure, not a quality failure. I didn't want to add more filters or folders. I wanted to remove the need to know what to search for. Natural language input means users describe what they need in their own words, and the system does the matching. The bet was that reducing time-to-template below the threshold of frustration would change the behaviour entirely.",
   },
 ];
 
 const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [slideWidth, setSlideWidth] = useState(0);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setSlideWidth(el.offsetWidth));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -73,22 +88,39 @@ const Work = () => {
           </button>
 
           {/* Slides */}
-          <div className="carousel-track-container">
+          <div className="carousel-track-container" ref={containerRef}>
             <div
               className="carousel-track"
               style={{
-                transform: `translateX(-${currentIndex * 100}%)`,
+                transform: `translateX(-${currentIndex * slideWidth}px)`,
               }}
             >
               {projects.map((project, index) => (
-                <div className="carousel-slide" key={index}>
+                <div
+                  className="carousel-slide"
+                  key={index}
+                  style={{ width: slideWidth || undefined }}
+                >
                   <div className="carousel-content">
                     <div className="carousel-info">
                       <div className="carousel-number">
                         <h3>0{index + 1}</h3>
                       </div>
                       <div className="carousel-details">
-                        <h4>{project.title}</h4>
+                        <h4
+                          onClick={
+                            project.title === "Kira AI"
+                              ? () => window.dispatchEvent(new CustomEvent("openKiraChat"))
+                              : project.title === "BrandBrief AI"
+                              ? () => window.open("https://on-brief-ai.vercel.app/", "_blank", "noopener,noreferrer")
+                              : undefined
+                          }
+                          style={
+                            project.title === "Kira AI" || project.title === "BrandBrief AI"
+                              ? { cursor: "pointer", color: "var(--accentColor)" }
+                              : undefined
+                          }
+                        >{project.title}</h4>
                         <p className="carousel-category">
                           {project.category}
                         </p>
@@ -96,15 +128,21 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        <div className="carousel-thinking">
+                          <span className="tools-label">Product Thinking</span>
+                          <p>{project.thinking}</p>
+                        </div>
                       </div>
                     </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage
-                        image={project.image}
-                        alt={project.title}
-                        link={project.link}
-                      />
-                    </div>
+                    {project.image && (
+                      <div className="carousel-image-wrapper">
+                        <WorkImage
+                          image={project.image}
+                          alt={project.title}
+                          link={project.link}
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

@@ -51,6 +51,12 @@ const ChatWidget = () => {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    const handler = () => setIsOpen(true);
+    window.addEventListener("openKiraChat", handler);
+    return () => window.removeEventListener("openKiraChat", handler);
+  }, []);
+
   const revealWordByWord = async (
     messageId: string,
     fullText: string
