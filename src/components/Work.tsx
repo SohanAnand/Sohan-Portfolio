@@ -115,9 +115,9 @@ const Work = () => {
                               ? () => window.open("https://on-brief-ai.vercel.app/", "_blank", "noopener,noreferrer")
                               : undefined
                           }
-                          style={
+                          className={
                             project.title === "Kira AI" || project.title === "BrandBrief AI"
-                              ? { cursor: "pointer", color: "var(--accentColor)" }
+                              ? "carousel-title-clickable"
                               : undefined
                           }
                         >{project.title}</h4>
