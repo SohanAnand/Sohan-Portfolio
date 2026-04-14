@@ -15,9 +15,23 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Product Manager, Co-Op</h4>
+                <h4>Product Manager (Volunteer)</h4>
+                <h5>Community Dreams Foundation · Remote</h5>
+                <h3>Feb 2026 – Present</h3>
+              </div>
+            </div>
+            <p>
+              Orchestrating AI transformation of 3 legacy products, defining roadmap to migrate 5 manual workflows to LLM automation.
+              Architecting 0→1 AI feature processing 500+ monthly requests, owning PRD, data pipeline, and success metrics.
+              Facilitating alignment across 4 non-technical stakeholder groups, securing buy-in for 6-month transformation roadmap.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>AI Product Manager</h4>
                 <h5>Fabrix.ai · Pleasanton, CA</h5>
-                <h3>Jan 2025 - Jul 2025</h3>
+                <h3>Jan 2025 – Jul 2025</h3>
               </div>
             </div>
             <p>
@@ -31,7 +45,7 @@ const Career = () => {
               <div className="career-role">
                 <h4>Product Manager</h4>
                 <h5>Sony Interactive Entertainment, PlayStation</h5>
-                <h3>Dec 2022 - Sep 2023</h3>
+                <h3>Dec 2022 – Sep 2023</h3>
               </div>
             </div>
             <p>
@@ -45,7 +59,7 @@ const Career = () => {
               <div className="career-role">
                 <h4>Product Manager</h4>
                 <h5>Qliken Technology</h5>
-                <h3>Jul 2021 - Nov 2022</h3>
+                <h3>Jul 2021 – Nov 2022</h3>
               </div>
             </div>
             <p>
@@ -59,7 +73,7 @@ const Career = () => {
               <div className="career-role">
                 <h4>Associate Product Manager</h4>
                 <h5>Qliken Technology</h5>
-                <h3>Jan 2020 - Jun 2021</h3>
+                <h3>Jan 2020 – Jun 2021</h3>
               </div>
             </div>
             <p>

@@ -101,6 +101,10 @@ const WhatIDo = () => {
                 <div className="what-tags">AI Product Strategy</div>
                 <div className="what-tags">Agentic Workflows</div>
                 <div className="what-tags">RAG Pipelines</div>
+                <div className="what-tags">LLMs &amp; Gen AI</div>
+                <div className="what-tags">Vector Embeddings</div>
+                <div className="what-tags">Context Engineering</div>
+                <div className="what-tags">MCP</div>
                 <div className="what-tags">A/B Testing</div>
                 <div className="what-tags">Product-Led Growth</div>
                 <div className="what-tags">B2B SaaS</div>
@@ -140,6 +144,10 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">AI-Assisted Dev</div>
                 <div className="what-tags">Multi-Agent Systems</div>
+                <div className="what-tags">SQL · Mixpanel · Amplitude</div>
+                <div className="what-tags">Supabase · pgvector</div>
+                <div className="what-tags">RICE Prioritization</div>
+                <div className="what-tags">OKRs · SaaS Metrics</div>
                 <div className="what-tags">Cohort Analysis</div>
                 <div className="what-tags">Root Cause Analysis</div>
                 <div className="what-tags">Activation &amp; Retention</div>
