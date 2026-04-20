@@ -45,6 +45,7 @@ Sohan thinks in AI systems. He understands how large language models work at an 
 - Proved 20% higher user engagement through ML-powered recommendations vs. static dashboards via three controlled A/B tests across different customer segments
 - Improved win rate by 12% through six targeted onboarding fixes derived from 15+ discovery sessions with churned accounts
 - Cut deployment time by 30% with the composable dashboard framework, which became the GTM centerpiece for Fabrix's AWS Marketplace launch
+- Led the Fabrix.ai AWS Marketplace launch end-to-end, generating a $500K+ sales pipeline within 90 days of go-live by pairing the composable dashboard framework with a product-led GTM motion
 - Reduced customer success team dependency on engineering for technical questions by over 50% through the internal knowledge base
 - Compressed the gap between account creation and first meaningful insight from days to hours by restructuring the onboarding sequence
 
@@ -336,6 +337,15 @@ A: My name is Kira AI. I am Sohan's personal assistant on his portfolio.
 
 ### Role and Fit
 
+**Q: Give me your 10-second pitch.**
+A: I am an AI-native product manager who does not just write specs — I ship. I have scaled enterprise products from 800 users to 60,000 and built production RAG systems end-to-end. I am looking for a PM or AI PM role where building matters as much as strategy.
+
+**Q: Give me your 30-second pitch.**
+A: I am Sohan, a product manager with five years of experience shipping B2B SaaS and enterprise products at Sony PlayStation, Fabrix.ai, and Qliken. What makes me different from most PMs is that I build the AI systems I manage — I shipped a live RAG-powered assistant on my portfolio, a semantic template discovery tool for Canva Teams, and AI agent workflows for Fortune 500 enterprises at Fabrix. I think in AI systems at an architectural level and I use that depth to make sharper product calls. I am targeting full-time PM and AI PM roles where I can own the 0-to-1 build and drive measurable business outcomes.
+
+**Q: Tell me about yourself.**
+A: I am Sohan Anand Hanagandi. I have spent the last five years as a product manager shipping B2B SaaS and enterprise products — most recently at Fabrix.ai, where I led the AWS Marketplace launch that generated $500K+ in pipeline in 90 days and shipped AI agent workflows for Tata Communications and two Fortune 500 accounts. Before that, I scaled the PlayStation Developer Portal from 800 to over 60,000 partners in 10 months and drove $465K+ in ARR recovery at Qliken through data-driven prioritization decisions. What makes me unusual is that I am a full-stack PM — I build the AI systems I manage. Kira AI, the assistant answering you right now, is a RAG system I architected and deployed end-to-end on my portfolio. I have a computer science background, five years of shipping, and a product philosophy built on finding root causes and building the right solution rather than the easiest one. I am looking for full-time PM or AI PM roles where building matters as much as strategy.
+
 **Q: What kind of roles are you looking for?**
 A: I am looking for full-time Product Manager, Senior Product Manager, or AI Product Manager roles, preferably at companies building AI-native products or applying AI to enterprise B2B SaaS problems. I am especially excited about roles where I can own the 0-to-1 build phase, work closely with engineering and data science teams, and drive measurable product outcomes. I am also open to AI Engineering adjacent roles where product thinking and technical AI implementation overlap.
 
@@ -408,6 +418,15 @@ A: My expected graduation is December 2025. I am available for full-time roles s
 **Q: Are you open to contract or consulting roles?**
 A: My primary interest is in full-time roles where I can build deep product ownership and drive long-term impact. I am open to discussing contract arrangements on a case-by-case basis, particularly for AI product builds or 0-to-1 projects where my build-and-ship capability adds immediate value.
 
+**Q: What are your compensation expectations?**
+A: I am open to discussing compensation and I try not to anchor on a specific number before understanding the full picture of a role — the scope, the team, the equity structure, the growth trajectory, and how the company thinks about leveling. My focus right now is on finding the right environment: a team that is serious about shipping, a product that gives me room to own the 0-to-1 build, and a company where the impact I drive is visible and rewarded. When those pieces are right, compensation tends to be a straightforward conversation. I am happy to align on a range once we have talked through the role itself.
+
+**Q: Do you have a minimum salary requirement?**
+A: I would rather understand the shape of the role before committing to a specific figure. I have a clear sense of market ranges for the positions I am targeting and I am confident my expectations are aligned with what is reasonable for someone at my experience level and technical depth. Once we have discussed the scope, the team, and the overall package, I am confident we can find a number that works for both sides.
+
+**Q: Are you weighing multiple offers right now?**
+A: I am in active conversations with a few teams and I am being thoughtful about each one. What matters most to me is fit, not speed — I would rather take the right role than the fastest one. If a process moves forward quickly on my end, it is because the opportunity is genuinely exciting and aligned with what I am looking for.
+
 ---
 
 ### AI and Technical Depth
@@ -427,12 +446,27 @@ A: I define evaluation criteria before the feature ships. For ML recommendations
 **Q: What is the difference between a good prompt and a bad prompt?**
 A: A good prompt gives the model the context it needs, constrains the output format, specifies the reasoning approach, and accounts for edge cases. A bad prompt is vague, assumes the model has context it does not have, and produces outputs that require significant manual correction. I understand how language models process context and how token limits affect output quality. I use that understanding to structure prompts that produce reliable, actionable reasoning rather than generic responses. For AI product features, prompt design is as important as system architecture because the model's behavior is entirely a function of how you frame the task.
 
+**Q: What do you think about "agentic AI" — hype or real shift?**
+A: Real shift, not hype — but most companies calling their products "agentic" today are shipping chatbots with extra steps. The genuine shift is from systems that answer questions to systems that take multi-step actions against a goal, with their own planning, tool use, and self-correction. At Fabrix, I designed AI agent workflows for IT incident management where that distinction matters: one agent detects, another classifies, a third recommends remediation, and the chain has to hold together under real production conditions. The hard part of agentic AI is not building a single agent — it is reliability, context management across steps, failure handling, and knowing when to hand back to a human. Most of the "agentic" products you see on LinkedIn have not yet solved those problems. The ones that do will define the next wave of B2B software.
+
+**Q: What is an "AI wrapper" and why do you care about the distinction?**
+A: An "AI wrapper" is a product that puts a thin UI on top of an off-the-shelf LLM API without adding proprietary data, workflow depth, or retrieval context. I care about the distinction because wrapper products have almost no defensibility — the moment the underlying model gets cheaper or a competitor ships a similar UI, the business evaporates. The products I build, like Kira AI and BrandBrief AI, are not wrappers. They ground the LLM in a structured knowledge base via RAG, shape the retrieval and prompting layer around a specific user problem, and embed the AI inside a workflow that would not exist without it. Defensibility in AI products comes from data, context, and workflow — not from the model.
+
+**Q: What does "invisible AI" mean to you?**
+A: Invisible AI means the best AI features are the ones users never think about as "AI." They just experience a friction disappearing — onboarding that used to take six hours now takes 90 minutes, template discovery that used to require scrolling through folders now takes a sentence of natural language, a manual triage step now resolves itself. The moment a product has to label a feature "✨ AI-powered" to justify its existence, something has probably gone wrong upstream in the problem definition. I optimize for the outcome, not the label.
+
+**Q: Walk me through the biggest trade-offs you have made in your career.**
+A: A few stand out. First, **model choice vs. raw capability** — for Kira AI and BrandBrief AI I deliberately chose leaner retrieval architectures over more expensive, higher-capability model configurations, because for grounded retrieval tasks the bottleneck is context quality, not model size. Second, **scope vs. speed** at Baseline Tech — I cut a six-month feature plan down to 14 weeks by ruthlessly removing anything that did not directly validate the core hypothesis, and still hit 85% feature completion while shipping seven weeks ahead of schedule. Third, **pipeline vs. platform** at Qliken — I turned down $250K in near-term enterprise pipeline to redirect engineering toward retention fixes, because the cohort data showed the requested features would have less than 5% adoption. That decision recovered $285K in ARR and kept the roadmap defensible. Each trade-off was a choice between an easy "yes" and a harder, data-supported "no in service of a bigger yes."
+
 ---
 
 ### Product Philosophy
 
 **Q: What is your product philosophy?**
 A: Find the true root cause of the problem, not the surface symptom. Generate multiple solutions and evaluate them against real constraints. Build the best solution, not the easiest one. Measure everything before and after. Make trade-offs explicitly and defend them with data. Ship, iterate, and scale what works. I do not believe in strategy without execution or execution without strategy. They are the same thing done at different time horizons.
+
+**Q: What is your take on the current wave of AI features being shipped everywhere?**
+A: Most AI features should not exist. A lot of what gets shipped today is what I call "AI slop" — features bolted onto products to ride the hype cycle without solving a real user problem. Adding AI to everything does not make a product smarter; it makes it noisier. The discipline I try to hold is simple: the right question is never "how do we add AI?" but "what friction is genuinely worth removing, and is AI the right tool to remove it?" The best PMs in this era are the ones brave enough to kill low-value AI features and focus engineering capacity on the ones that actually change user outcomes.
 
 **Q: How do you decide what to build next?**
 A: I combine behavioral data, customer discovery, competitive analysis, and business impact modeling to prioritize. The framework I use most often is RICE (Reach, Impact, Confidence, Effort), but I apply it with full context from cohort analysis, win/loss interviews, and churn data rather than as a mechanical scoring exercise. The most important judgment call is always whether I am solving the right problem before choosing how to solve it.
@@ -464,3 +498,12 @@ A: I have done it multiple times. I built Kira AI — the assistant answering yo
 
 **Q: What motivates you in your work?**
 A: Finding problems that are hiding in plain sight and building the solution. The moment of realizing that a metric everyone thought was a product problem is actually an onboarding problem, or that a churn signal everyone blamed on pricing is actually a discoverability problem, those moments of root cause clarity are what I find most energizing. Then building the solution and watching the metric move is the confirmation that the reasoning was right.
+
+**Q: Tell me about a product decision you got wrong.**
+A: At Qliken early in my PM tenure, I over-indexed on a major enterprise request for a customizable dashboard builder. The customer was vocal, the pipeline value looked good, and I pushed to get it on the roadmap in the next sprint. Engineering built it in five weeks. Six weeks after shipping, the feature had under 8% adoption — even among the accounts that had originally requested it. I had made two mistakes. First, I confused expressed desire with revealed behavior — the accounts said they wanted customization, but what they actually wanted was a better default dashboard that required less customization. Second, I did not validate demand beyond the single loud customer. After that, I built the cohort-analysis and low-adoption signal framework that later informed the $285K ARR recovery decision where I deprioritized two enterprise-requested features because the data showed less than 5% similar-feature adoption. The lesson from the first miss made the second call possible. I do not think of wrong calls as things to avoid — I think of them as the instrumentation that makes future calls sharper.
+
+**Q: What is a weakness you are actively working on?**
+A: I over-index on quantitative signal. When I have good cohort data, clean funnel metrics, and retention curves, I move fast and confidently. I have learned the hard way that the data is necessary but not sufficient — there is qualitative stakeholder signal, political context, and organizational readiness that numbers do not capture. At Fabrix, I caught myself once pushing a retention fix purely on cohort evidence without adequately socializing it with the customer success team, who had nuance about specific accounts I was missing. I now deliberately pair every major data-driven call with at least two or three one-on-one stakeholder conversations before committing. The weakness is not the analytical rigor — that is a strength. The weakness is trusting it so much that I under-invest in the human signal that surrounds it.
+
+**Q: Have you ever disagreed with a leadership decision and lost?**
+A: Yes. I do not win every argument, and I do not think I should. When I lose a decision, my rule is simple: disagree hard in the room, commit hard outside the room. I have had roadmap calls go differently than I wanted, feature prioritizations that I argued against get built anyway, and timelines I thought were aggressive approved. In each case, once the decision is made, I shift into making it succeed rather than litigating it in hallways. The credibility that buys you is more valuable than any single call. And surprisingly often, being wrong about a decision you argued against teaches you something you could not have learned by being right.
