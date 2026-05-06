@@ -21,9 +21,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Orchestrating AI transformation of 3 legacy products, defining roadmap to migrate 5 manual workflows to LLM automation.
-              Architecting 0→1 AI feature processing 500+ monthly requests, owning PRD, data pipeline, and success metrics.
-              Facilitating alignment across 4 non-technical stakeholder groups, securing buy-in for 6-month transformation roadmap.
+              Leading the AI transformation of three legacy products, defining a roadmap to migrate five manual workflows to LLM automation. Architecting a 0→1 AI feature now processing 500+ monthly requests, owning the PRD, data pipeline, and success metrics end to end. Most of the work, though, is alignment — translating the case for a six-month transformation across four non-technical stakeholder groups and getting them to bet on it.
             </p>
           </div>
           <div className="career-info-box">
@@ -35,9 +33,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Scoped AI agent workflows for Tata Communications and two Fortune 500 accounts, cutting onboarding time by 40% and driving 20% higher engagement through ML-powered A/B testing.
-              Diagnosed that 72% of churned users dropped before reaching core value, then shipped 6 targeted fixes improving win rate by 12%.
-              Architected a composable dashboard framework that became the GTM centerpiece for the AWS Marketplace launch, shifting Fabrix from services-led to product-led onboarding.
+              Joined Fabrix to scope AI agent workflows for Tata Communications and two Fortune 500 accounts, cutting onboarding time by 40% and lifting engagement 20% through ML-powered A/B testing. Along the way, I caught that 72% of churned users were dropping before reaching core value, and shipped six targeted fixes that pulled win rate up 12%. The biggest bet was architecting a composable dashboard framework — Fabrix's first self-serve integration layer — which became the GTM centerpiece for the AWS Marketplace launch and shifted the company from services-led to product-led onboarding.
             </p>
           </div>
           <div className="career-info-box">
@@ -49,9 +45,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Led a 14-person cross-functional team to scale the Developer Portal from 800 to 60,000+ partners in 10 months.
-              Simplified a 6-hour registration process to 90 minutes after discovering it drove 40% of developer churn.
-              Built a SQL-driven ROI case that secured 2 new regional markets and 20K+ developers with zero incremental budget.
+              Led a 14-person cross-functional team across engineering, partnerships, legal, and regional ops to scale PlayStation's Developer Portal from 800 to over 60,000 partners in ten months. Diagnosed that a six-hour registration flow was driving 40% of developer churn, and rebuilt it down to 90 minutes by simplifying GDPR licensing. Then made a SQL-driven ROI case to VP leadership that unlocked two new regional markets with zero incremental budget, adding another 20K+ developers.
             </p>
           </div>
           <div className="career-info-box">
@@ -63,9 +57,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Detected a 90-day churn spike through SQL and Mixpanel cohort analysis, launched 2 targeted interventions recovering $180K ARR.
-              Benchmarked 8 vendors across 42 feature dimensions, shaping a roadmap that secured 2 enterprise wins at $95K ACV each.
-              Deprioritized $250K in sales-requested features after cohort data showed under 5% adoption, redirecting engineering toward retention fixes that recovered $285K ARR.
+              Caught a 90-day churn spike through SQL and Mixpanel cohort analysis, built a retention dashboard from scratch, and launched two targeted interventions that recovered $180K in ARR. Benchmarked eight competing vendors across 42 feature dimensions to shape a roadmap that secured two enterprise wins at $95K ACV each. The hardest call was deprioritizing $250K of sales-requested features after cohort data showed under 5% adoption — redirecting engineering toward retention fixes that recovered another $285K in ARR.
             </p>
           </div>
           <div className="career-info-box">
@@ -77,9 +69,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Inherited NPS at 6.5 with no discovery framework; built structured research from scratch, ran 20+ sessions, and drove NPS to 8.0 in two quarters.
-              Uncovered a 40% onboarding drop-off where the product assumed technical proficiency users lacked, then partnered with UX to redesign activation with guided wizards.
-              Improved time-to-value by 30% through a redesigned onboarding flow backed by user research and iterative testing.
+              Inherited an NPS of 6.5 with no discovery framework in place, so I built structured user research from scratch and ran 20+ sessions to surface three core friction points — moving NPS to 8.0 in two quarters. The biggest unlock came from spotting a 40% onboarding drop-off where the product quietly assumed technical proficiency users didn't have; partnering with UX to redesign activation around guided wizards improved time-to-value by 30%.
             </p>
           </div>
         </div>
