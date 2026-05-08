@@ -16,12 +16,12 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Product Manager</h4>
-                <h5>Community Dreams Foundation · Remote</h5>
+                <h5>Community Dreams Foundation · San Francisco Bay Area, CA</h5>
                 <h3>Feb 2026 – Present</h3>
               </div>
             </div>
             <p>
-              Shipped intake, triage, and document-generation AI agents to production across two legacy products, replacing manual ops workflows with LLM pipelines I owned end to end — prompt engineering, orchestration, evals, and monitoring. Built a per-agent eval harness (golden-set + LLM-as-judge) and ran blind comparisons against staff baselines before each rollout, so quality wasn't a guess. Aligned three stakeholder groups around a quarterly AI roadmap, which freed up engineering capacity for two priority initiatives.
+              Manual ops workflows were the bottleneck. I shipped intake, triage, and doc-generation AI agents to production across 2 legacy products replacing them with LLM pipelines I owned end-to-end: prompts, orchestration, eval harnesses (golden-set + LLM-as-judge). Ran blind comparisons vs. staff baselines before every rollout. Aligned 3 stakeholder groups on the AI roadmap and unlocked engineering capacity for 2 priority initiatives.
             </p>
           </div>
           <div className="career-info-box">
@@ -33,7 +33,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Drove multi-agent orchestration for Tata Communications and two Fortune 500 accounts, cutting onboarding by ~10%, and shipped RAG pipelines with custom chunking and reusable retrieval that lifted golden-set eval relevance by ~10pp. The bigger bet was replacing GPT-4 with a fine-tuned open-source LLM in production — eval quality held flat, per-token cost dropped meaningfully. On the customer side, I caught at-risk enterprise accounts pre-value through telemetry, reprioritized the backlog, and shipped four fixes that closed the renewal.
+              Drove multi-agent orchestration for Tata Communications and 2 Fortune 500 accounts cut onboarding ~10%. Shipped RAG pipelines with custom chunking and reusable retrieval, lifting golden-set eval relevance ~10pp. Replaced GPT-4 with a fine-tuned open-source LLM in prod held eval quality flat, cut per-token cost. Caught at-risk accounts via telemetry pre-value; shipped 4 fixes that closed the renewal.
             </p>
           </div>
           <div className="career-info-box">
@@ -45,7 +45,7 @@ const Career = () => {
               </div>
             </div>
             <p>
-              Led a 14-person cross-functional team to scale PlayStation's Developer Portal from 800 to 4,000+ partners in ten months. Diagnosed a funnel drop-off in dev-portal onboarding and redesigned the compliance workflow with the team, cutting partner activation time by ~22%. Then built a SQL-backed ROI model that earned VP approval to expand into two new regional markets.
+              PlayStation's Developer Portal was stuck at 800 partners. I led a 14-person cross-functional team and scaled it 5x to 4,000+ in 10 months. Diagnosed funnel drop-off in onboarding, redesigned the compliance workflow, and cut partner activation ~22%. Built a SQL-backed ROI model that secured VP approval to expand into 2 regional markets. The portal didn't need more features it needed less friction.
             </p>
           </div>
           <div className="career-info-box">
@@ -53,23 +53,11 @@ const Career = () => {
               <div className="career-role">
                 <h4>Product Manager</h4>
                 <h5>Qliken Technology · B2B SaaS Analytics Platform</h5>
-                <h3>Jul 2021 – Nov 2022</h3>
+                <h3>Jan 2020 – Nov 2022</h3>
               </div>
             </div>
             <p>
-              The hardest call was killing two features tied to $250K of sales pipeline after cohort data showed under 5% adoption — and redirecting four engineers onto retention work that ultimately recovered $285K in ARR. Earlier in the year, I caught a 90-day churn spike in SQL and Mixpanel and shipped two targeted interventions that recovered another $180K in ARR across three quarters. A vendor evaluation across eight tools surfaced three gaps that reshaped the roadmap and unlocked two enterprise wins at $95K ACV each.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Associate Product Manager</h4>
-                <h5>Qliken Technology · B2B SaaS Analytics Platform</h5>
-                <h3>Jan 2020 – Jun 2021</h3>
-              </div>
-            </div>
-            <p>
-              Caught a drop-off at the config step in onboarding and partnered with UX to redesign the activation flow, materially cutting time-to-value. Ran 20+ customer discovery sessions, surfaced three top friction points, and resolved each — lifting product satisfaction two quarters running.
+              My first PM role taught me when to kill things. Killed 2 features with &lt;5% adoption ($250K pipeline) and redirected 4 engineers to retention recovered $285K ARR. Caught a 90-day churn spike in SQL/Mixpanel; shipped 2 targeted interventions that recovered $180K ARR over 3 quarters. Ran vendor eval across 8 tools, surfacing 3 gaps that reshaped the roadmap and unlocked 2 enterprise wins ($95K ACV).
             </p>
           </div>
         </div>
