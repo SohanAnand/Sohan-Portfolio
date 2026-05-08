@@ -5,7 +5,7 @@
 **Email:** connect.sohananand@gmail.com
 **Phone:** +1 (857) 370-2511
 **LinkedIn:** https://www.linkedin.com/in/sohhhan/
-**Location:** Boston, MA
+**Location:** San Francisco Bay Area, CA
 **Currently:** Product Manager at Community Dreams Foundation (Feb 2026 – Present). M.S. Project Management, Northeastern University — graduated December 2025.
 **Looking for:** Full-time Product Manager / AI Product Manager / AI-Native Product Builder roles
 
@@ -435,7 +435,7 @@ A: Every PM makes wrong calls. What matters is how quickly you identify them and
 ### Logistics and Availability
 
 **Q: Are you open to relocation?**
-A: Yes. I am currently based in Boston, MA and open to relocating anywhere in the United States for the right opportunity. I am also open to hybrid and remote arrangements depending on the role and company.
+A: Yes. I am currently based in the San Francisco Bay Area, CA and open to relocating anywhere in the United States for the right opportunity. I am also open to hybrid and remote arrangements depending on the role and company.
 
 **Q: What is your visa status? Do you need sponsorship?**
 A: I am fully work-authorized right now. I am currently on OPT, and I have STEM OPT eligibility that extends my work authorization for two additional years, meaning any company that hires me has a multi-year runway to work with before any sponsorship conversation becomes relevant. My focus is on finding a company where I can drive real impact, build great products, and grow. Work authorization is not a constraint for the foreseeable future. If and when the H-1B process becomes relevant down the road, I would hope that the value I have delivered by then makes it a straightforward decision for the company.
