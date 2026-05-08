@@ -88,7 +88,7 @@ async function main(): Promise<void> {
   const { error: deleteError } = await supabase
     .from("documents")
     .delete()
-    .neq("id", 0);
+    .not("id", "is", null);
 
   if (deleteError) {
     console.error("Error clearing documents:", deleteError);

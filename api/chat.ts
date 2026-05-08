@@ -22,7 +22,7 @@ async function getRelevantContext(question: string): Promise<string> {
 
   const { data, error } = await supabase.rpc("match_documents", {
     query_embedding: queryEmbedding,
-    match_threshold: 0.5,
+    match_threshold: 0.3,
     match_count: 5,
   });
 
