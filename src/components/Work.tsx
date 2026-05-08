@@ -12,6 +12,13 @@ const projects: {
   link?: string;
 }[] = [
   {
+    title: "Trip Booking Concierge",
+    category: "Autonomous AI Agent",
+    tools: "Built an autonomous AI trip-booking agent end-to-end, designed the multi-step planning loop with tool-calling for flight search, hotel availability, and itinerary assembly. Engineered a two-step approval gate that surfaces every irreversible action (bookings, payments, schedule changes) for explicit user confirmation before execution. Wired structured outputs and fact provenance into every agent response so users can trace every claim back to its source. Deployed as a live demo with adversarial red-team test coverage and zero approval bypasses across 12+ scenarios.",
+    thinking: "Most autonomous agents optimize for speed. I optimized for trust. The insight was uncomfortable: a $2K booking error isn't a UX bug, it's a refund nightmare. If someone hands their wallet to an AI, the agent's job isn't to be fast. It needs to be right, and to ask before it bets the user's money on being right. I built the trust-by-default approval gate because the prevailing pattern (full autonomy) breaks the moment a hallucination meets a credit card. Choosing a two-step approval over silent execution was deliberate. The friction is the feature. Across 12+ adversarial red-team scenarios, the gate cut unsafe-booking risk to zero: zero bypasses, 100% fact provenance. Shipping a live demo where reviewers can try to break it is the proof of concept.",
+    link: "https://trip-booking-ai-agent.vercel.app/",
+  },
+  {
     title: "Kira AI",
     category: "AI-Powered Assistant",
     tools: "Claude API · Supabase · pgvector · TypeScript · React. Built a context-aware AI assistant from scratch. Designed the RAG pipeline, chunked and embedded a knowledge base using pgvector, and wired retrieval to Claude's API for grounded, accurate responses. Deployed as a persistent chat interface on this portfolio with real-time streaming and fallback handling.",
@@ -111,12 +118,12 @@ const Work = () => {
                           onClick={
                             project.title === "Kira AI"
                               ? () => window.dispatchEvent(new CustomEvent("openKiraChat"))
-                              : project.title === "BrandBrief AI"
-                              ? () => window.open("https://on-brief-ai.vercel.app/", "_blank", "noopener,noreferrer")
+                              : project.link
+                              ? () => window.open(project.link, "_blank", "noopener,noreferrer")
                               : undefined
                           }
                           className={
-                            project.title === "Kira AI" || project.title === "BrandBrief AI"
+                            project.title === "Kira AI" || project.link
                               ? "carousel-title-clickable"
                               : undefined
                           }
