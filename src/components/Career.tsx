@@ -16,7 +16,8 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Product Manager</h4>
-                <h5>Community Dreams Foundation · San Francisco Bay Area, CA</h5>
+                <h5>Community Dreams Foundation</h5>
+                <h5>San Francisco Bay Area, CA</h5>
                 <h3>Feb 2026 – Present</h3>
               </div>
             </div>
@@ -28,7 +29,8 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>AI Product Co-op</h4>
-                <h5>Fabrix.ai (fka CloudFabrix) · Pleasanton, CA</h5>
+                <h5>Fabrix.ai</h5>
+                <h5>Pleasanton, CA</h5>
                 <h3>Jan 2025 – Jul 2025</h3>
               </div>
             </div>
@@ -40,7 +42,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Product Manager</h4>
-                <h5>Sony Interactive Entertainment, PlayStation · $28B Division, 120M+ MAU</h5>
+                <h5>Sony Interactive Entertainment, PlayStation</h5>
                 <h3>Dec 2022 – Sep 2023</h3>
               </div>
             </div>
@@ -52,7 +54,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Product Manager</h4>
-                <h5>Qliken Technology · B2B SaaS Analytics Platform</h5>
+                <h5>Qliken Technology</h5>
                 <h3>Jan 2020 – Nov 2022</h3>
               </div>
             </div>
